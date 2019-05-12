@@ -53,13 +53,13 @@ export default{
 
   .Navbar-container__title-h1 {
     position: relative;
-    font-size: 2vw;
+    font-size: calc(1rem + 1.5vw);
     top: 4vw;
   }
   .Navbar-container__title-h2 {
     position: relative;
-    font-size: 1.2vw;
-    margin-top: 1rem;
+    font-size: calc(0.3rem + 1vw);
+    margin-top: 1vw;
     top: 4vw;
   }
   .Navbar-container__icon {

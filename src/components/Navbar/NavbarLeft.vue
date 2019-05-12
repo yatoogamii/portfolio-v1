@@ -17,10 +17,10 @@
   display: flex;
   align-items: center;
   width: 35vw;
-  height: 2.3vw;
+  height: 2.5vw;
   position: fixed;
   background-color: #bdbdbf;
-  font-size: 1.5vw;
+  font-size: calc(1.5rem + 0.5vw);
 }
 
 .Navbar-container__nav-left {
