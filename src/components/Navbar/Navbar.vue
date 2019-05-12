@@ -1,14 +1,16 @@
 <template>
   <div class="Navbar-container">
     <nav class="Navbar-container__nav Navbar-container__nav-left">
-      <a class="Navbar-container__nav__link Navbar-container__nav-left__link" href="#" target="_blank">Skills</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-left__link Navbar-container__link-contact" href="#" target="_blank">Contact</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-left__link Navbar-container__link-about" href="#" target="_blank">About</a>
     </nav>
     <header class="Navbar-container__title">
       <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
       <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
     </header>
     <nav class="Navbar-container__nav Navbar-container__nav-right">
-      <a class="Navbar-container__nav__link Navbar-container__nav-right__link" href="#" target="_blank">About</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-project" href="#" target="_blank">Project</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-skills" href="#" target="_blank">Skills</a>
     </nav>
   </div>
 </template>
@@ -66,16 +68,29 @@
   padding: 0 5rem 0 1rem;
   left: 0;
 
-  .Navbar-container__nav-left__link {
-    margin-right: auto;
+  .Navbar-container__link-about {
+    position: fixed;
+    left: 28%;
+  }
+  .Navbar-container__link-contact {
+    position: fixed;
+    left: 0;
+    display: none;
   }
 }
 .Navbar-container__nav-right {
   padding: 0 1rem 0 5rem;
   right: 0;
 
-  .Navbar-container__nav-right__link {
-    margin-left: auto;
+  .Navbar-container__link-skills {
+    position: relative;
+    right: 85%;
+    display: none;
+  }
+  .Navbar-container__link-project {
+    position: relative;
+    right: 65%;
+    display: none;
   }
 }
 
