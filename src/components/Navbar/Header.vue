@@ -2,13 +2,38 @@
   <header class="Navbar-container__title elevation-24">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
+    <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
   </header>
 </template>
 
 <script>
+
 export default{
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return {
+      styles : {
+        icon : {
+          fontSize : "6vw",
+          top : "13vw",
+          color : "#1d1d1d",
+        }
+      }
+    };
+  },
+  methods: {
+    hoverOver() {
+      this.styles.icon.fontSize = "7vw";
+      this.styles.icon.top = "12.7vw";
+    }, 
+    hoverLeave() {
+      this.styles.icon.fontSize = "6vw";
+      this.styles.icon.top = "13vw";
+    }, 
+  },
+    
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -16,6 +41,7 @@ export default{
 .Navbar-container__title {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: fixed;
   width: 35vw;
   height: 20vw;
@@ -35,6 +61,11 @@ export default{
     font-size: 1.2vw;
     margin-top: 1rem;
     top: 4vw;
+  }
+  .Navbar-container__icon {
+    cursor: pointer;
+    position: fixed;
+    top: 13vw;
   }
 }
 </style>
