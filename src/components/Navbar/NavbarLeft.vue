@@ -1,5 +1,5 @@
 <template>
-    <nav class="Navbar-container__nav Navbar-container__nav-left">
+    <nav class="Navbar-container__nav Navbar-container__nav-left elevation-24">
       <a class="Navbar-container__nav__link Navbar-container__nav-left__link Navbar-container__link-contact" href="#" target="_blank">Contact</a>
       <a class="Navbar-container__nav__link Navbar-container__nav-left__link Navbar-container__link-about" href="#" target="_blank">About</a>
     </nav>

@@ -1,5 +1,5 @@
 <template>
-  <div class="Navbar-container">
+  <div class="Navbar-container elevation-24">
     <NavbarLeft></NavbarLeft>
     <Header></Header>
     <NavbarRight></NavbarRight>
