@@ -45,9 +45,10 @@ export default{
   flex-direction: column;
   align-items: center;
   position: fixed;
+  left: 50%;
+  transform: translate(-50%);
   width: 35vw;
   height: 20vw;
-  text-align: center;
   background-color: #d2d2d4;
   color: #1d1d1d;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
