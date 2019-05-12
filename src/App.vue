@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="scss">
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
+
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +29,7 @@ export default {
 
 html {
   font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
