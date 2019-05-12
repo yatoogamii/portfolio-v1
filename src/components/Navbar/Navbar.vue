@@ -70,12 +70,11 @@
 
   .Navbar-container__link-about {
     position: fixed;
-    left: 28%;
+    left: 27%;
   }
   .Navbar-container__link-contact {
     position: fixed;
-    left: 0;
-    display: none;
+    left: 19%;
   }
 }
 .Navbar-container__nav-right {
@@ -83,14 +82,12 @@
   right: 0;
 
   .Navbar-container__link-skills {
-    position: relative;
-    right: 85%;
-    display: none;
+    position: fixed;
+    right: 27.5%;
   }
   .Navbar-container__link-project {
-    position: relative;
-    right: 65%;
-    display: none;
+    position: fixed;
+    right: 20%;
   }
 }
 
