@@ -1,22 +1,27 @@
 <template>
-  <div class="Navbar-container elevation-24">
+  <header class="Navbar-container elevation-24">
     <NavbarLeft></NavbarLeft>
     <Header></Header>
     <NavbarRight></NavbarRight>
-  </div>
+    <ArrowWhite top="top: 15vw"></ArrowWhite>
+    <ArrowWhite top="top: 24vw"></ArrowWhite>
+    <ArrowWhite top="top: 33vw"></ArrowWhite>
+  </header>
 </template>
 
 <script>
 import NavbarRight from './NavbarRight.vue';
 import NavbarLeft from './NavbarLeft.vue';
 import Header from './Header.vue';
+import ArrowWhite from './ArrowWhite.vue';
 
 export default{
   name: 'Navbar',
   components: {
     NavbarLeft,
     NavbarRight,
-    Header
+    Header,
+    ArrowWhite
   }
 }
 </script>

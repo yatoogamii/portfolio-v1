@@ -1,9 +1,11 @@
 <template>
-  <header class="Navbar-container__title elevation-24">
+  <div class="Navbar-container__title elevation-24">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
-    <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
-  </header>
+    <a href="#">
+      <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -62,10 +64,13 @@ export default{
     margin-top: 1vw;
     top: 4vw;
   }
+
   .Navbar-container__icon {
     cursor: pointer;
     position: fixed;
     top: 13vw;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 </style>
