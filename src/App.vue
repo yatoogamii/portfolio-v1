@@ -1,14 +1,14 @@
 <template>
-  <Arrow></Arrow>
+  <Navbar></Navbar>
 </template>
 
 <script>
-import Arrow from './components/Arrow/Arrow.vue';
+import Navbar from './components/Navbar/Navbar.vue';
 
 export default {
   name: 'App',
   components: {
-    Arrow, 
+    Navbar, 
   },
   data () {
     return {
