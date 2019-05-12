@@ -1,14 +1,20 @@
 <template>
-  <Navbar></Navbar>
+  <div>
+    <Navbar></Navbar>
+    <About></About>
+  </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar/Navbar.vue';
+import About from './components/About/About.vue';
+
 
 export default {
   name: 'App',
   components: {
     Navbar, 
+    About
   }, 
   data() {
     return {
