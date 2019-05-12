@@ -3,9 +3,9 @@
     <NavbarLeft></NavbarLeft>
     <Header></Header>
     <NavbarRight></NavbarRight>
-    <ArrowWhite top="top: 15vw"></ArrowWhite>
-    <ArrowWhite top="top: 24vw"></ArrowWhite>
-    <ArrowWhite top="top: 33vw"></ArrowWhite>
+    <ArrowWhite top="top: 30vh"></ArrowWhite>
+    <ArrowWhite top="top: 48vh"></ArrowWhite>
+    <ArrowWhite top="top: 66vh"></ArrowWhite>
   </header>
 </template>
 

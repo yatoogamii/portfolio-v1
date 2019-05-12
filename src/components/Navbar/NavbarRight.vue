@@ -29,11 +29,11 @@
 
   .Navbar-container__link-skills {
     position: fixed;
-    right: 27.5%;
+    right: 25%;
   }
   .Navbar-container__link-project {
     position: fixed;
-    right: 20%;
+    right: 16%;
   }
 }
 

@@ -29,11 +29,11 @@
 
   .Navbar-container__link-about {
     position: fixed;
-    left: 27vw;
+    left: 24vw;
   }
   .Navbar-container__link-contact {
     position: fixed;
-    left: 19vw;
+    left: 14vw;
   }
 }
 
