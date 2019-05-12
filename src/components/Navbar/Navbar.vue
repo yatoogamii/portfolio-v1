@@ -1,5 +1,5 @@
 <template>
-  <header class="Navbar-container elevation-24">
+  <header class="Navbar-container">
     <NavbarLeft></NavbarLeft>
     <Header></Header>
     <NavbarRight></NavbarRight>
@@ -28,6 +28,8 @@ export default{
 
 <style lang="scss" scoped>
 .Navbar-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   margin: auto;
