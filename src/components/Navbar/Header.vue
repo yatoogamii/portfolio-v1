@@ -1,5 +1,5 @@
 <template>
-  <div class="Navbar-container__title elevation-24">
+  <div class="Navbar-container__title">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
     <a href="#">
