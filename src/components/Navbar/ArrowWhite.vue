@@ -20,7 +20,7 @@
     transform: translate(-50%);
     width: 13vw;
     height: 13vw;
-    clip-path: polygon(50% 100%, 0 50%, 0 49%, 50% 99%, 100% 49%, 100% 50%);
+    clip-path: polygon(50% 100%, 0 43%, 0 42%, 50% 99%, 100% 42%, 100% 43%);
     z-index: 1;
   }
 
