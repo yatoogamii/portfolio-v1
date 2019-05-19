@@ -19,6 +19,9 @@ import Text from './Text.vue';
 </script>
 
 <style lang="scss" scoped>
-
+.about {
+  width: 100vw;
+  height: 100vh;
+}
 </style>
 
