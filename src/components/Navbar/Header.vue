@@ -2,7 +2,7 @@
   <div class="Navbar-container__title">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
-    <a href="#">
+    <a href="#about">
       <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
     </a>
   </div>

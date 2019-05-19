@@ -13,13 +13,13 @@ export default{
 <style lang="scss" scoped>
 .about__img-container {
   width: 50%;
-  height: 50%;
+  height: 100%;
 
   .about__img {
     width: 100%;
     height: 100%;
-    max-width: 50vw;
-    max-height: 50vh;
+    object-fit: cover;
+    object-position: center;
   }
 }
 </style>
