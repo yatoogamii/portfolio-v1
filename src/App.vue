@@ -36,6 +36,7 @@ export default {
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
