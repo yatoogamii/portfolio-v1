@@ -2,19 +2,22 @@
   <div>
     <Navbar :mousePos="mousePos"></Navbar>
     <About></About>
+    <Skills></Skills>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar/Navbar.vue';
 import About from './components/About/About.vue';
+import Skills from './components/Skills/Skills.vue';
 
 
 export default {
   name: 'App',
   components: {
     Navbar, 
-    About
+    About,
+    Skills
   }, 
   data() {
     return {
