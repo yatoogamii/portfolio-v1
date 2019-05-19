@@ -3,6 +3,8 @@
     <Navbar :mousePos="mousePos"></Navbar>
     <About></About>
     <Skills></Skills>
+    <Project></Project>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import Navbar from './components/Navbar/Navbar.vue';
 import About from './components/About/About.vue';
 import Skills from './components/Skills/Skills.vue';
+import Project from './components/Project/Project.vue';
+import Contact from './components/Contact/Contact.vue';
 
 
 export default {
@@ -17,7 +21,9 @@ export default {
   components: {
     Navbar, 
     About,
-    Skills
+    Skills,
+    Project,
+    Contact
   }, 
   data() {
     return {

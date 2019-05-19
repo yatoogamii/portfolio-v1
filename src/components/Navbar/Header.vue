@@ -15,7 +15,7 @@ export default{
   data() {
     return {
       anchor: {
-        link : "#about"
+        link : ""
       },
       styles : {
         icon : {
@@ -38,11 +38,19 @@ export default{
     setAnchorLink() {
       const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
       const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
+      const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
+      const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
 
       if (aboutPos > 0) {
         this.anchor.link = "#about";
       } else if(skillsPos > 0){
         this.anchor.link = "#skills";
+      } else if(projectPos > 0) {
+        this.anchor.link = "#project"
+      } else if(contactPos > 0) {
+        this.anchor.link = "#contact"
+      } else {
+        this.anchor.link = "#about"
       }
     }
   },
