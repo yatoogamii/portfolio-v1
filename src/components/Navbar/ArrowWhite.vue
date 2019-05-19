@@ -16,7 +16,7 @@
   .Navbar-container__arrow-white {
     position: absolute;
     background-color: #d2d2d4;
-    left: 50%;
+    left: 50vw;
     transform: translate(-50%);
     width: 13vw;
     height: 13vw;
