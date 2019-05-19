@@ -45,7 +45,7 @@ export default{
   flex-direction: column;
   align-items: center;
   position: fixed;
-  left: 50%;
+  left: 50vw;
   transform: translate(-50%);
   width: 35vw;
   height: 20vw;
