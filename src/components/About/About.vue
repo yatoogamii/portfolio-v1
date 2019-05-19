@@ -1,20 +1,24 @@
 <template>
-  <div class="about-container">
-
-  </div>
+  <section class="about">
+    <Img></Img>
+    <Text></Text>
+  </section>
 </template>
 
 <script>
+import Img from './Img.vue';
+import Text from './Text.vue';
+
   export default{
     name: 'About',
+    components: {
+      Img,
+      Text
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-.about-container {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
+
 </style>
 
