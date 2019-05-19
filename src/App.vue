@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar></Navbar>
+    <Navbar :mousePos="mousePos"></Navbar>
     <About></About>
   </div>
 </template>
@@ -18,8 +18,9 @@ export default {
   }, 
   data() {
     return {
+      mousePos: 0,
     }
-  }
+  },
 }
 </script>
 

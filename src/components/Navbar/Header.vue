@@ -2,7 +2,7 @@
   <div class="Navbar-container__title">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
-    <a href="#about">
+    <a @click="setAnchorLink" :href="anchor.link">
       <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
     </a>
   </div>
@@ -14,6 +14,9 @@ export default{
   name: 'Header',
   data() {
     return {
+      anchor: {
+        link : "#about"
+      },
       styles : {
         icon : {
           fontSize : "6vw",
@@ -32,6 +35,16 @@ export default{
       this.styles.icon.fontSize = "6vw";
       this.styles.icon.top = "13vw";
     }, 
+    setAnchorLink() {
+      const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
+      const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
+
+      if (aboutPos > 0) {
+        this.anchor.link = "#about";
+      } else if(skillsPos > 0){
+        this.anchor.link = "#skills";
+      }
+    }
   },
     
 }
