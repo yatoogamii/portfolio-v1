@@ -70,7 +70,7 @@ export default{
   transform: translate(-50%);
   width: 35vw;
   height: 20vw;
-  background-color: #d2d2d4;
+  background-color: red;
   color: #1d1d1d;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
   z-index: 1;
