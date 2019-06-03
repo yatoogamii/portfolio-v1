@@ -1,15 +1,15 @@
 <template>
   <article class="about__text-container">
-    <h1>Apprenant professionnelle</h1>
-    <p>Amet repellat reiciendis doloribus accusantium saepe similique? Impedit quisquam pariatur aspernatur eveniet assumenda Itaque laboriosam itaque odit aliquam odit aliquid? Commodi omnis a minus modi deleniti quos laboriosam voluptates! Quo dicta aspernatur iusto officia incidunt eaque. Natus expedita odio vitae reiciendis natus Libero repellat dignissimos sequi aperiam perspiciatis quas quod Hic modi officia enim quidem inventore. Quam eos dicta ut libero dolor, deleniti. Commodi molestias fuga consectetur minima distinctio commodi vero Aliquid pariatur rerum delectus exercitationem cumque dolores. Atque sint praesentium totam repudiandae laudantium Laborum consequatur quo sapiente ut rem? Ut tempore id quam nobis a asperiores. Sit quo sunt</p>
-    <p>The harder i work, the luckier i get</p>
+    <h1 class="about__text-title">Apprenant <span class="about__text--red">professionnelle</span></h1>
+    <p class="about__text-desc">Je me présente, Elias Bracaval, 19 ans. Je suis sur un pc depuis l'âge de 6 ans, blablabla</p>
+    <p class="about__text-quote">The <span class="about__text--red">harder</span> i work, the <span class="about__text--red">luckier</span> i get</p>
   </article>
 </template>
 
 <script>
-  export default{
-    name: 'TextAbout', 
-  }
+export default{
+  name: 'TextAbout', 
+}
 </script>
 
 <style lang="scss" scoped>
@@ -21,12 +21,25 @@
   flex-direction: column;
   color: rgba(255, 255, 255, 1);
   font-size: 2rem;
-  padding: 5rem;
   width: 50%;
-  height: 90%;
+  height: 80%;
 
-  h1 {
+  .about__text-title {
+    width: 80%;
+    text-align: right;
+  }
 
+  .about__text-desc {
+    width: 80%;
+  }
+
+  .about__text-quote {
+    width: 80%;
+    text-align: left;
+  }
+
+  .about__text--red {
+    color: red;
   }
 }
 
