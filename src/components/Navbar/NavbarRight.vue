@@ -1,7 +1,7 @@
 <template>
     <nav class="Navbar-container__nav Navbar-container__nav-right elevation-12">
-      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-project" href="#" target="_blank">Project</a>
-      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-skills" href="#" target="_blank">Skills</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-project" href="#project">Project</a>
+      <a class="Navbar-container__nav__link Navbar-container__nav-right__link Navbar-container__link-skills" href="#skills">Skills</a>
     </nav>
 </template>
 
