@@ -73,7 +73,7 @@ export default{
   background-color: #d2d2d4;
   color: #1d1d1d;
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  z-index: 1;
+  z-index: 2;
 
   .Navbar-container__title-h1 {
     position: relative;
