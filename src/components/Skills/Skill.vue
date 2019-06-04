@@ -2,8 +2,8 @@
   <article :style="width" class="skills__skill">
     <v-progress-circular
       :rotate="360"
-      :size="150"
-      :width="20"
+      :size="130"
+      :width="17"
       :value="value"
       :color="color"
       >
