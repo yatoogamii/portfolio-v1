@@ -21,6 +21,7 @@
   position: fixed;
   background-color: #bdbdbf;
   font-size: calc(1.5rem + 0.5vw);
+  z-index: 1;
 }
 
 .Navbar-container__nav-left {
