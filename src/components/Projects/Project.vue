@@ -1,7 +1,11 @@
 <template>
-    <article :style="width">
-      <div class="container-project">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
+    <article :style="width" class="container-project">
+      <div class="div-project">
+        <slot name="img"></slot>
+        <slot name="text"></slot>
+        <div class="div-project__button">
+           <v-btn small dark left color="#1d1d1d">Go</v-btn>
+        </div>
       </div>
     </article>
 </template>
@@ -16,8 +20,28 @@ export default{
 <style lang="scss" scoped>
 
 .container-project {
-  background-color: red;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-project {
+  background-color: #fff;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  &:hover {
+    width: 55%;
+  }
+
+ .div-project__button {
+    width: 100%;
+  }
 }
 
 img {
@@ -25,5 +49,15 @@ img {
   height: 50%;
 }
 
+h1 {
+  padding: 0.5rem;
+  width: 90%;
+  text-align: left;
+}
+
+p {
+  width: 90%;
+  text-align: left;
+}
 </style>
 
