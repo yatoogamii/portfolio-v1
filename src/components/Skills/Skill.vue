@@ -1,7 +1,7 @@
 <template>
   <article :style="width" class="skills__skill">
     <v-progress-circular
-      :rotate="360"
+      :rotate="-90"
       :size="130"
       :width="17"
       :value="value"
