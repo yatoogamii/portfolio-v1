@@ -39,6 +39,7 @@ export default{
       const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
       const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
       const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
+      const projectNextPos = document.getElementsByClassName('project-next')[0].getBoundingClientRect().y;
       const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
 
       if (aboutPos > 0) {
@@ -46,15 +47,17 @@ export default{
       } else if(skillsPos > 0){
         this.anchor.link = "#skills";
       } else if(projectPos > 0) {
-        this.anchor.link = "#project"
+        this.anchor.link = "#project";
+      } else if(projectNextPos > 0) {
+        this.anchor.link = "#project-next";
       } else if(contactPos > 0) {
-        this.anchor.link = "#contact"
+        this.anchor.link = "#contact";
       } else {
-        this.anchor.link = "#about"
+        this.anchor.link = "#about";
       }
     }
   },
-    
+
 }
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section id="project" class="project">
+  <section id="project-next" class="project-next">
     <Project width="width: 50%">
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
@@ -43,7 +43,7 @@
 import Project from './Project.vue';
 
 export default{
-  name: 'Projects',
+  name: 'Projects-next',
   components: {
     Project
   }
@@ -51,7 +51,7 @@ export default{
 </script>
 
 <style scoped>
-.project {
+.project-next {
   width: 100vw;
   height: 100vh;
   display: flex;

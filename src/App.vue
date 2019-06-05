@@ -4,6 +4,7 @@
     <About></About>
     <Skills></Skills>
     <Projects></Projects>
+    <ProjectsNext></ProjectsNext>
     <Contact></Contact>
   </div>
 </template>
@@ -13,6 +14,7 @@ import Navbar from './components/Navbar/Navbar.vue';
 import About from './components/About/About.vue';
 import Skills from './components/Skills/Skills.vue';
 import Projects from './components/Projects/Projects.vue';
+import ProjectsNext from './components/Projects/Projects-next.vue';
 import Contact from './components/Contact/Contact.vue';
 
 
@@ -23,7 +25,8 @@ export default {
     About,
     Skills,
     Projects,
-    Contact
+    ProjectsNext,
+    Contact,
   }, 
   data() {
     return {
