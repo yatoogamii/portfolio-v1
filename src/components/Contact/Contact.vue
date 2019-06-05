@@ -17,7 +17,18 @@
             />
 
             <!-- Textarea component -->
-            <fvl-textarea :value.sync="form.message" label="Message" name="message" required="true"/>
+            <fvl-textarea rows="5" :value.sync="form.message" label="Message" name="message" required="true"/>
+
+              <v-btn
+                :loading="loading"
+                :disabled="loading"
+                color="secondary"
+                dark
+                large
+                @click="loader = 'loading'"
+                >
+                Valider</v-btn>
+              <v-btn large dark @click="resetForm">reset</v-btn>
 
     </fvl-form>
     <article>
@@ -35,7 +46,7 @@ export default{
     FvlForm,
     FvlInput,
     FvlTextarea,
-    FvlSelect
+    FvlSelect,
   },
   data() {
     return {
@@ -44,7 +55,29 @@ export default{
         email: '',
         object: '',
         message: '',
-      }
+      },
+      loader: null,
+      loading: false
+    }
+  },
+  watch: {
+    loader() {
+      const l = this.loader
+      console.log(this);
+      console.log(this[l]);
+      this[l] = !this[l]
+
+      setTimeout(() => (this[l] = false), 2000)
+
+      this.loader = null
+    }
+  },
+  methods: {
+    resetForm() {
+      this.form.fullname = '';
+      this.form.email = '';
+      this.form.object = '';
+      this.form.message = '';
     }
   }
 }
