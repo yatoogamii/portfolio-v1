@@ -11,7 +11,7 @@
           name="object"
           placeholder="-- sujet de votre demande --"
           :allowEmpty="true"
-          :options="{ 'Professionnelle': 'Professionnelle', 'Bug': 'Report Bug', 'Autre': 'Autre' }"
+          :options="{ 'Professionnel': 'Professionnel', 'Bug': 'Report Bug', 'Autre': 'Autre' }"
           :selected.sync="form.object"
           />
 

@@ -1,6 +1,6 @@
 <template>
   <article class="about__text-container">
-    <h1 class="about__text-title">Apprenant <span class="about__text--red">professionnelle</span></h1>
+    <h1 class="about__text-title">Apprenant <span class="about__text--red">professionnel</span></h1>
     <p class="about__text-desc">Je me présente, Elias Bracaval, 19 ans. Je suis sur un pc depuis l'âge de 6 ans, blablabla</p>
     <p class="about__text-quote">The <span class="about__text--red">harder</span> i work, the <span class="about__text--red">luckier</span> i get</p>
   </article>
