@@ -2,7 +2,7 @@
   <section id="project" class="project">
     <Project>
     <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
+      <img src="../../assets/img/score-keeper.png" alt="preview site"/>
     </template>
     <template v-slot:text>
       <h1>test 1</h1>
@@ -12,7 +12,7 @@
     </Project>
     <Project textalign="text-align: right">
     <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
+      <img src="../../assets/img/quotation.png" alt="preview site"/>
     </template>
     <template v-slot:text>
       <h1>test 2</h1>

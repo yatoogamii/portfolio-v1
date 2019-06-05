@@ -2,22 +2,22 @@
   <section id="project-next" class="project-next">
     <Project>
     <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
+      <img src="../../assets/img/photographe.png" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>test 2</h1>
-      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-      <p class="div-project__tag text--red">#HTML #CSS #JS</p>
+      <h1>Photographe</h1>
+      <p class="div-project__desc">Site vitrine pour une photographe spécialisé dans les naissances, l'enfance et les anniversaires</p>
+      <p class="div-project__tag text--red">#HTML #CSS</p>
     </template>
     </Project>
     <Project textalign="text-align: right">
     <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
+      <img src="../../assets/img/monster-slayer.png" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>test 3</h1>
-      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-      <p class="div-project__tag text--red">#HTML #CSS #JS</p>
+      <h1>Monster Slayer</h1>
+      <p class="div-project__desc">Jeux réalisé sans Js native ou on peut faire affronter une personnage contre un boss, avec les possibilités d'utiliser des attaques spécials, de soigner et de recommencer</p>
+      <p class="div-project__tag text--red">#HTML #CSS #VueJS #Vuetify</p>
     </template>
     </Project>
   </section>

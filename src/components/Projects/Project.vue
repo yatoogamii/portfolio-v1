@@ -35,14 +35,14 @@ export default{
   color: white;
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 50% 10% 25% 5% 10%;
+  grid-template-rows: 5% 50% 10% 20% 5% 10%;
   transition: all 0.5s ease;
 
   img {
     width: 100%;
     height: 100%;
     grid-column: 1 / 4;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     object-fit: cover;
     object-position: center;
   }
@@ -51,25 +51,25 @@ export default{
     width: 100%;
     font-size: 3rem;
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   .div-project__desc {
     width: 100%;
     font-size: 1.5rem;
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
   }
 
   .div-project__tag {
     grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
   }
 
   .div-project__button {
     width: 100%;
     grid-column: 2 / 3;
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
 
     .project__button {
       width: 15rem;
