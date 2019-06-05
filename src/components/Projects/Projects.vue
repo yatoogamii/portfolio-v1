@@ -1,6 +1,6 @@
 <template>
   <section id="project" class="project">
-    <Project width="width: 40%">
+    <Project width="width: 50%">
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
@@ -9,7 +9,7 @@
       <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
     </template>
     </Project>
-    <Project   width="width: 40%">
+    <Project width="width: 50%">
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
@@ -18,7 +18,7 @@
       <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
     </template>
     </Project>
-    <Project   width="width: 33.33%">
+    <Project width="width: 50%">
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
@@ -27,16 +27,7 @@
       <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
     </template>
     </Project>
-    <Project   width="width: 33.33%">
-    <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
-    </template>
-    <template v-slot:text>
-      <h1>oui oui</h1>
-      <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-    </template>
-    </Project>
-    <Project   width="width: 33.33%">
+    <Project width="width: 50%">
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
