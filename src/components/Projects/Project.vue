@@ -1,11 +1,11 @@
 <template>
   <article class="container-project">
-    <div class="div-project">
+    <div :style="textalign" class="div-project">
       <slot name="img"></slot>
       <slot name="text"></slot>
       <slot name="tag"></slot>
       <div class="div-project__button">
-        <v-btn left dark class="project__button" left color="#1d1d1d">Go</v-btn>
+        <v-btn left class="project__button" left color="#fff">Go</v-btn>
       </div>
     </div>
   </article>
@@ -14,7 +14,7 @@
 <script>
 export default{
   name: 'Project',
-  props: ['width']
+  props: ['width', 'textalign']
 }
 </script>
 
@@ -31,7 +31,8 @@ export default{
 .div-project {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #1d1d1d;
+  color: white;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 50% 10% 25% 5% 10%;
@@ -47,16 +48,14 @@ export default{
   }
 
   h1 {
-    width: 90%;
-    text-align: left;
+    width: 100%;
     font-size: 3rem;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 
   .div-project__desc {
-    width: 90%;
-    text-align: left;
+    width: 100%;
     font-size: 1.5rem;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -75,9 +74,14 @@ export default{
     .project__button {
       width: 15rem;
       height: 4rem;
-      margin-left: auto;
+      margin: auto;
       left: 0;
+      right: 0;
     }
+  }
+
+  .text--red {
+    color: red;
   }
 
 }
