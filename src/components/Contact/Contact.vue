@@ -3,20 +3,31 @@
     <!-- form wrapper -->
     <fvl-form class="form" method="post" :data="form" url="/create">
       <!-- Text input component -->
-      <fvl-input :value.sync="form.fullname" label="Full Name" name="fullname" />
+      <fvl-input :value.sync="form.fullname" label="Nom complet" name="nomcomplet" required="true" />
+        <!-- Text input component -->
+        <fvl-input :value.sync="form.email" label="Email" name="email" type="email" required="true" />
+          <!-- Text input component -->
+          <fvl-select
+            label="Object"
+            name="object"
+            placeholder="-- sujet de votre demande --"
+            :allowEmpty="true"
+            :options="{ 'Professionnelle': 'Professionnelle', 'Bug': 'Report Bug', 'Autre': 'Autre' }"
+            :selected.sync="form.object"
+            />
 
-      <!-- Textarea component -->
-      <fvl-textarea :value.sync="form.bio" label="Bio" name="bio" />
+            <!-- Textarea component -->
+            <fvl-textarea :value.sync="form.message" label="Message" name="message" required="true"/>
 
     </fvl-form>
     <article>
-      
+
     </article>
   </section>
 </template>
 
 <script>
-import { FvlForm, FvlInput, FvlTextarea, FvlRadio, FvlSubmit } from 'formvuelar'
+import { FvlForm, FvlInput, FvlTextarea, FvlSelect} from 'formvuelar'
 
 export default{
   name: 'Contact',
@@ -24,15 +35,15 @@ export default{
     FvlForm,
     FvlInput,
     FvlTextarea,
-    FvlRadio,
-    FvlSubmit,
+    FvlSelect
   },
   data() {
     return {
       form: {
         fullname: '',
-        bio: '',
-        pet: ''
+        email: '',
+        object: '',
+        message: '',
       }
     }
   }
