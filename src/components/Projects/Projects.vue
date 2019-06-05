@@ -5,9 +5,9 @@
       <img src="../../assets/img/score-keeper.png" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>test 1</h1>
-      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-      <p class="div-project__tag text--red">#HTML #CSS #JS</p>
+      <h1>Score Keeper</h1>
+      <p class="div-project__desc">Jeux réalisé en Js Vanilla où deux joueurs s'affrontent pour atteindre un score maximum</p>
+      <p class="div-project__tag text--red">#HTML #CSS #JS #Nostalgic-css</p>
     </template>
     </Project>
     <Project textalign="text-align: right">
@@ -15,9 +15,9 @@
       <img src="../../assets/img/quotation.png" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>test 2</h1>
-      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-      <p class="div-project__tag text--red">#HTML #CSS #JS</p>
+      <h1>Quotation</h1>
+      <p class="div-project__desc">Application réalisé sans Js native qui génère des citations aléatoires depuis une API</p>
+      <p class="div-project__tag text--red">#HTML #CSS #ReactJS #Axios #MaterialUI</p>
     </template>
     </Project>
   </section>

@@ -16,7 +16,7 @@
     </template>
     <template v-slot:text>
       <h1>Monster Slayer</h1>
-      <p class="div-project__desc">Jeux réalisé sans Js native ou on peut faire affronter une personnage contre un boss, avec les possibilités d'utiliser des attaques spécials, de soigner et de recommencer</p>
+      <p class="div-project__desc">Jeux réalisé sans Js native ou on peut faire affronter une personnage contre un boss, avec les possibilitées d'utiliser des attaques spécials, de soigner et de recommencer</p>
       <p class="div-project__tag text--red">#HTML #CSS #VueJS #Vuetify</p>
     </template>
     </Project>
