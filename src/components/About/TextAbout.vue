@@ -25,15 +25,18 @@ export default{
   height: 80%;
 
   .about__text-title {
+    font-size: 2rem;
     width: 80%;
     text-align: right;
   }
 
   .about__text-desc {
+    font-size: 1.5rem;
     width: 80%;
   }
 
   .about__text-quote {
+    font-size: 1rem;
     width: 80%;
     text-align: left;
   }
