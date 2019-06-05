@@ -1,39 +1,23 @@
 <template>
   <section id="project" class="project">
-    <Project width="width: 50%">
+    <Project>
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>oui oui</h1>
-      <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
+      <h1>test 1</h1>
+      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
+      <p class="div-project__tag">#HTML #CSS #JS</p>
     </template>
     </Project>
-    <Project width="width: 50%">
+    <Project>
     <template v-slot:img>
       <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
     </template>
     <template v-slot:text>
-      <h1>oui oui</h1>
-      <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-    </template>
-    </Project>
-    <Project width="width: 50%">
-    <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
-    </template>
-    <template v-slot:text>
-      <h1>oui oui</h1>
-      <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
-    </template>
-    </Project>
-    <Project width="width: 50%">
-    <template v-slot:img>
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/2b/37/3c/ocean-blue-tenerife.jpg" alt="preview site"/>
-    </template>
-    <template v-slot:text>
-      <h1>oui oui</h1>
-      <p>Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
+      <h1>test 2</h1>
+      <p class="div-project__desc">Ipsum enim sunt nesciunt minus id Ratione similique minus dolor nobis commodi Nisi tenetur similique?</p>
+      <p class="div-project__tag">#HTML #CSS #JS</p>
     </template>
     </Project>
   </section>
@@ -56,8 +40,7 @@ export default{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 </style>
