@@ -26,7 +26,7 @@ export default{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   height: 33.33%;
 }
 

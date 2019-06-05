@@ -20,7 +20,7 @@ export default{
   justify-content: space-around;
   flex-direction: column;
   color: rgba(255, 255, 255, 1);
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 50%;
   height: 80%;
 

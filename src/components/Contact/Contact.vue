@@ -56,9 +56,5 @@ export default{
   grid-row: 2;
 }
 
-.fvl-input-label {
-  @apply block uppercase tracking-wide text-grey-darker text-lg font-bold mb-2;
-}
-
 </style>
 

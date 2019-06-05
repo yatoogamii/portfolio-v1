@@ -20,7 +20,7 @@
   height: 2.5vw;
   position: fixed;
   background-color: #bdbdbf;
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: calc(1rem + 0.5vw);
   z-index: 1;
 }
 

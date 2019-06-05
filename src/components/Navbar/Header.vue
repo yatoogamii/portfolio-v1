@@ -82,7 +82,7 @@ export default{
   }
   .Navbar-container__title-h2 {
     position: relative;
-    font-size: calc(0.3rem + 1vw);
+    font-size: calc(0.2rem + 1vw);
     margin-top: 1vw;
     top: 4vw;
   }

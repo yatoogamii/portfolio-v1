@@ -50,7 +50,7 @@ img {
 }
 
 h1 {
-  padding: 0.5rem;
+  padding: 0.3rem;
   width: 90%;
   text-align: left;
 }
@@ -58,6 +58,7 @@ h1 {
 p {
   width: 90%;
   text-align: left;
+  font-size: 0.8rem;
 }
 </style>
 
