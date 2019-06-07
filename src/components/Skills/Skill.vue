@@ -1,14 +1,24 @@
 <template>
   <article :style="width" class="skills__skill">
-    <v-progress-circular
-      :rotate="-90"
-      :size="130"
-      :width="17"
-      :value="value"
-      :color="color"
-      >
-      {{ this.text }}
-    </v-progress-circular>
+    <!-- <v-progress-circular -->
+    <!--   :rotate="-90" -->
+    <!--   :size="130" -->
+    <!--   :width="17" -->
+    <!--   :value="value" -->
+    <!--   :color="color" -->
+    <!--   > -->
+    <!--   {{ this.text }} -->
+    <!-- </v-progress-circular> -->
+
+    <div class="ldBar label-center"
+         data-type="fill"
+         data-fill-dir="ltr"
+         :data-img="img"
+         :data-value="value"
+         data-img-size="150,150"
+         data-fill-background-extrude="1"
+         data-fill-background="#3D3D3D"
+         ></div>
 
   </article>
 </template>
@@ -16,7 +26,7 @@
 <script>
 export default{
   name: 'Skill',
-  props: ['value', 'color', 'text', 'width']
+  props: ['value', 'color', 'text', 'width', 'img']
 }
 </script>
 
@@ -30,6 +40,14 @@ export default{
   height: 33.33%;
 }
 
+.ldBar-label:after {
+  content: "USD";
+  color: #aaa;
+  margin-left: 5px;
+  font-family: courier new;
+  font-size: 0.7em;
+  font-weight: 200;
+}
 
 </style>
 

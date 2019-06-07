@@ -1,13 +1,13 @@
 <template>
   <section id="skills" class="skills">
-    <Skill color="blue" value="90" text="html" width="width: 34%"></Skill>
-    <Skill color="green" value="70" text="Js" width="width: 34%"></Skill>
-    <Skill color="blue" value="90" text="html" width="width: 33.33%"></Skill>
-    <Skill color="red" value="50" text="css" width="width: 33.33%"></Skill>
-    <Skill color="green" value="70" text="Js" width="width: 33.33%"></Skill>
-    <Skill color="blue" value="90" text="html" width="width: 33.33%"></Skill>
-    <Skill color="red" value="50" text="css" width="width: 33.33%"></Skill>
-    <Skill color="green" value="70" text="Js" width="width: 33.33%"></Skill>
+    <Skill value="90" text="html" width="width: 34%"></Skill>
+    <Skill value="100" text="Js" width="width: 34%"></Skill>
+    <Skill value="90" text="html" width="width: 33.33%"></Skill>
+    <Skill img="./vuejs.svg" value="60" text="css" width="width: 33.33%"></Skill>
+    <Skill value="70" text="Js" width="width: 33.33%"></Skill>
+    <Skill value="90" text="html" width="width: 33.33%"></Skill>
+    <Skill img="./nodejs.svg" value="70" text="css" width="width: 33.33%"></Skill>
+    <Skill value="70" text="Js" width="width: 33.33%"></Skill>
   </section>
 </template>
 
