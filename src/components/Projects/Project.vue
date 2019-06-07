@@ -5,7 +5,9 @@
       <slot name="text"></slot>
       <slot name="tag"></slot>
       <div class="div-project__button">
-        <v-btn left class="project__button" left color="#fff">Go</v-btn>
+        <a :href="link" target="_blank">
+          <v-btn left class="project__button" color="#fff">Go</v-btn>
+        </a>
       </div>
     </div>
   </article>
@@ -14,7 +16,7 @@
 <script>
 export default{
   name: 'Project',
-  props: ['width', 'textalign']
+  props: ['width', 'textalign', 'link']
 }
 </script>
 

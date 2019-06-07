@@ -1,6 +1,6 @@
 <template>
   <section id="project-next" class="project-next">
-    <Project>
+    <Project link="https://elias-bracaval.fr/livraison-2/">
     <template v-slot:img>
       <img src="../../assets/img/photographe.png" alt="preview site"/>
     </template>
@@ -10,7 +10,7 @@
       <p class="div-project__tag text--red">#HTML #CSS</p>
     </template>
     </Project>
-    <Project textalign="text-align: right">
+    <Project link="https://elias-bracaval.fr/livraison7/" textalign="text-align: right">
     <template v-slot:img>
       <img src="../../assets/img/monster-slayer.png" alt="preview site"/>
     </template>
