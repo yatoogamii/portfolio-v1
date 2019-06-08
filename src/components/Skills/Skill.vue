@@ -1,15 +1,5 @@
 <template>
   <article :style="width" class="skills__skill">
-    <!-- <v-progress-circular -->
-    <!--   :rotate="-90" -->
-    <!--   :size="130" -->
-    <!--   :width="17" -->
-    <!--   :value="value" -->
-    <!--   :color="color" -->
-    <!--   > -->
-    <!--   {{ this.text }} -->
-    <!-- </v-progress-circular> -->
-
     <div class="ldBar label-center"
          data-type="fill"
          data-fill-dir="ltr"
@@ -19,7 +9,6 @@
          data-fill-background-extrude="1"
          data-fill-background="#3D3D3D"
          ></div>
-
   </article>
 </template>
 
