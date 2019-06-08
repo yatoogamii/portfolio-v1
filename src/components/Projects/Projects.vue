@@ -1,6 +1,6 @@
 <template>
   <section id="project" class="project">
-    <Project>
+    <Project link="https://elias-bracaval.fr/livraison5/">
     <template v-slot:img>
       <img src="../../assets/img/score-keeper.png" alt="preview site"/>
     </template>
@@ -10,7 +10,7 @@
       <p class="div-project__tag text--red">#HTML #CSS #JS #Nostalgic-css</p>
     </template>
     </Project>
-    <Project textalign="text-align: right">
+    <Project link="https://elias-bracaval.fr/livraison9/" textalign="text-align: right">
     <template v-slot:img>
       <img src="../../assets/img/quotation.png" alt="preview site"/>
     </template>
