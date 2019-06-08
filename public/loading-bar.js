@@ -345,7 +345,6 @@ wrap = function(content){
     text = document.createElement('div');
     text.setAttribute('class', 'ldBar-label');
     root.appendChild(svg);
-    root.appendChild(text);
     group = [0, 0];
     length = 0;
     this.fit = function(){

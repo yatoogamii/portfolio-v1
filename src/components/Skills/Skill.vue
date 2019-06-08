@@ -1,11 +1,12 @@
 <template>
   <article :style="width" class="skills__skill">
-    <div class="ldBar label-center"
+    <div class="ldBar"
          data-type="fill"
          data-fill-dir="ltr"
          :data-img="img"
          :data-value="value"
-         data-img-size="150,150"
+         data-img-size="125,125"
+         style="margin:auto"
          data-fill-background-extrude="1"
          data-fill-background="#3D3D3D"
          ></div>
@@ -28,15 +29,5 @@ export default{
   font-size: 1.3rem;
   height: 33.33%;
 }
-
-.ldBar-label:after {
-  content: "USD";
-  color: #aaa;
-  margin-left: 5px;
-  font-family: courier new;
-  font-size: 0.7em;
-  font-weight: 200;
-}
-
 </style>
 
