@@ -2,7 +2,7 @@
   <div class="Navbar-container__title">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
-    <a @click="fullpageDown" :href="anchor.link">
+    <a @click="setAnchorLink" :href="anchor.link">
       <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
     </a>
   </div>
@@ -57,6 +57,8 @@ export default{
       } else {
         this.anchor.link = "#about";
       }
+
+      this.animeSkills();
 
     },
     fullpageDown() {
