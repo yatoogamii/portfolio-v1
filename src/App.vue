@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <main>
     <Navbar :mousePos="mousePos"></Navbar>
     <About></About>
     <Skills></Skills>
     <Projects></Projects>
     <ProjectsNext></ProjectsNext>
     <Contact></Contact>
-  </div>
+  </main>
 </template>
 
 <script>

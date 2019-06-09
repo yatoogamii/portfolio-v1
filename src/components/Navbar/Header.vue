@@ -2,7 +2,7 @@
   <div class="Navbar-container__title">
     <h1 class="Navbar-container__title-h1">Bracaval Elias</h1>
     <h2 class="Navbar-container__title-h2">Developer Full Stack Junior</h2>
-    <a @click="setAnchorLink" :href="anchor.link">
+    <a @click="fullpageDown" :href="anchor.link">
       <v-icon class="Navbar-container__icon" @mouseover="hoverOver" @mouseleave="hoverLeave" :style="styles.icon">mdi-chevron-down</v-icon>
     </a>
   </div>
@@ -17,6 +17,7 @@ export default{
       anchor: {
         link : ""
       },
+      count: 0,
       styles : {
         icon : {
           fontSize : "6vw",
@@ -57,6 +58,28 @@ export default{
         this.anchor.link = "#about";
       }
 
+    },
+    fullpageDown() {
+      const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
+      const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
+      const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
+      const projectNextPos = document.getElementsByClassName('project-next')[0].getBoundingClientRect().y;
+      const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
+
+      const allPos = ["#about", "#skills", "#project", "#project-next", "#contact"];
+      this.anchor.link = allPos[this.count > allPos.length - 1 ? this.count = 0 : this.count];
+      this.count++;
+      this.animeSkills();
+    },
+    fullpageUp() {
+      const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
+      const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
+      const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
+      const projectNextPos = document.getElementsByClassName('project-next')[0].getBoundingClientRect().y;
+      const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
+
+      const allPos = [aboutPos, skillPos, projectPos, projectNextPos, contactPos];
+      this.anchor.link = allPos[this.count--];
       this.animeSkills();
     },
     animeSkills() {

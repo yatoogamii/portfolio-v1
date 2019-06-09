@@ -1,12 +1,12 @@
 <template>
-  <header class="Navbar-container">
+  <section class="Navbar-container">
     <NavbarLeft></NavbarLeft>
-    <Header></Header>
+    <Header :count="count" :link="link"></Header>
     <NavbarRight></NavbarRight>
     <ArrowWhite top="top: 30vh"></ArrowWhite>
     <ArrowWhite top="top: 48vh"></ArrowWhite>
     <ArrowWhite top="top: 66vh"></ArrowWhite>
-  </header>
+  </section>
 </template>
 
 <script>
@@ -17,6 +17,7 @@ import ArrowWhite from './ArrowWhite.vue';
 
 export default{
   name: 'Navbar',
+  props: ['link', 'count'],
   components: {
     NavbarLeft,
     NavbarRight,
