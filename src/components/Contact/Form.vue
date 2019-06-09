@@ -24,7 +24,7 @@
               color="secondary"
               dark
               large
-              @click="loader = 'loading'"
+              @click="loader = 'loading'; sendMessage()"
               >
               Valider</v-btn>
             <v-btn large dark @click="resetForm">reset</v-btn>
@@ -34,6 +34,7 @@
 
 <script>
 import { FvlForm, FvlInput, FvlTextarea, FvlSelect} from 'formvuelar'
+import $ from 'jquery';
 
 export default{
   name: 'Form',
@@ -58,8 +59,6 @@ export default{
   watch: {
     loader() {
       const l = this.loader
-      console.log(this);
-      console.log(this[l]);
       this[l] = !this[l]
 
       setTimeout(() => (this[l] = false), 2000)
@@ -73,6 +72,19 @@ export default{
       this.form.email = '';
       this.form.object = '';
       this.form.message = '';
+    },
+    sendMessage() {
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "bracaval.elias.pro@gmail.com",
+        Password : "f0d91566-4f07-4ca8-b0f3-45762dd0e933",
+        To : 'bracaval.elias.pro@gmail.com',
+        From : this.form.email,
+        Subject : this.form.object,
+        Body : this.form.message
+      }).then(
+        message => alert(message)
+      );
     }
   }
 }
