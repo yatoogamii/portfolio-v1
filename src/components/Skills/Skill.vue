@@ -1,23 +1,33 @@
 <template>
   <article :style="width" class="skills__skill">
-    <div class="ldBar"
-         data-type="fill"
-         data-fill-dir="ltr"
-         :data-img="img"
-         :data-value="value"
-         data-img-size="125,125"
-         style="margin:auto"
-         data-fill-background-extrude="1"
-         data-fill-background="#3D3D3D"
-         ></div>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <div class="ldBar"
+             data-type="fill"
+             data-fill-dir="ltr"
+             :data-img="img"
+             :data-value="value"
+             data-img-size="125,125"
+             style="margin:auto"
+             v-on="on"
+             data-fill-background-extrude="1"
+             data-fill-background="#3D3D3D"
+             ></div>
+      </template>
+      <span> 
+        <h1>{{ title }}</h1>
+        <p>{{ tooltip }}</p>
+      </span>
+    </v-tooltip>
   </article>
 </template>
 
 <script>
 export default{
   name: 'Skill',
-  props: ['value', 'color', 'text', 'width', 'img']
+  props: ['value', 'width', 'img', 'title', 'tooltip'],
 }
+
 </script>
 
 <style lang="scss" scoped>
