@@ -87,7 +87,7 @@ export default{
           js.set(70)
           postgresql.set(0)
           postgresql.set(60)
-        }, 700);
+        }, 500);
       }
     }
   }
