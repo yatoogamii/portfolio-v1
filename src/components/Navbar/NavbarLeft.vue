@@ -8,9 +8,9 @@
 <script>
 export default{
   name: 'NavbarLeft',
+  props: ['toogleBool'],
   data() {
     return {
-      toogleBool: true
     };
   },
   methods: {

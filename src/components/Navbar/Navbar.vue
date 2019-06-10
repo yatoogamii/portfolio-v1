@@ -1,7 +1,7 @@
 <template>
   <section class="Navbar-container">
-    <NavbarLeft></NavbarLeft>
-    <Header :count="count" :link="link"></Header>
+    <NavbarLeft toogleBool="toogleBool"></NavbarLeft>
+    <Header toogleBool="toogleBool" :count="count" :link="link"></Header>
     <NavbarRight></NavbarRight>
     <ArrowWhite top="top: 30vh"></ArrowWhite>
     <ArrowWhite top="top: 48vh"></ArrowWhite>
@@ -23,7 +23,13 @@ export default{
     NavbarRight,
     Header,
     ArrowWhite
+  },
+  data() {
+    return {
+      toogleBool: true
+    };
   }
+  
 }
 </script>
 

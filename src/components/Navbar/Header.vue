@@ -12,6 +12,7 @@
 
 export default{
   name: 'Header',
+  props: ['toogleBool'],
   data() {
     return {
       anchor: {
@@ -25,7 +26,6 @@ export default{
           color : "#1d1d1d",
         }
       },
-      toogleBool: true
     };
   },
   methods: {
@@ -60,29 +60,6 @@ export default{
 
       this.animeSkills();
 
-    },
-    fullpageDown() {
-      const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
-      const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
-      const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
-      const projectNextPos = document.getElementsByClassName('project-next')[0].getBoundingClientRect().y;
-      const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
-
-      const allPos = ["#about", "#skills", "#project", "#project-next", "#contact"];
-      this.anchor.link = allPos[this.count > allPos.length - 1 ? this.count = 0 : this.count];
-      this.count++;
-      this.animeSkills();
-    },
-    fullpageUp() {
-      const aboutPos = document.getElementsByClassName('about')[0].getBoundingClientRect().y;
-      const skillsPos = document.getElementsByClassName('skills')[0].getBoundingClientRect().y;
-      const projectPos = document.getElementsByClassName('project')[0].getBoundingClientRect().y;
-      const projectNextPos = document.getElementsByClassName('project-next')[0].getBoundingClientRect().y;
-      const contactPos = document.getElementsByClassName('contact')[0].getBoundingClientRect().y;
-
-      const allPos = [aboutPos, skillPos, projectPos, projectNextPos, contactPos];
-      this.anchor.link = allPos[this.count--];
-      this.animeSkills();
     },
     animeSkills() {
       if ( this.toogleBool && this.anchor.link == '#skills') {
