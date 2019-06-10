@@ -69,21 +69,11 @@ export default{
     resetForm() {
       this.form.fullname = '';
       this.form.email = '';
-      this.form.object = '';
+      this.form.object = '-- sujet de votre demande --';
       this.form.message = '';
     },
     sendMessage() {
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "bracaval.elias.pro@gmail.com",
-    Password : "f0d91566-4f07-4ca8-b0f3-45762dd0e933",
-    To : 'bracaval.elias.pro@gmail.com',
-    From : this.form.email,
-    Subject : this.form.object,
-    Body : this.form.message
-}).then(
-  message => alert(message)
-);
+      setTimeout(() => {this.resetForm()}, 1000)
     }
   }
 }
