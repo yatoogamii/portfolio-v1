@@ -18,16 +18,19 @@
           <!-- Textarea component -->
           <fvl-textarea :rows="5" :value.sync="form.message" label="Message" name="message" required />
 
+            <!-- add loading in disabled props --> 
             <v-btn
               :loading="loading"
-              :disabled="loading"
+              :disabled="true"
               color="secondary"
               dark
               large
               @click="loader = 'loading'; sendMessage()"
               >
-              Valider</v-btn>
-            <v-btn large dark @click="resetForm">reset</v-btn>
+              Valider
+            </v-btn>
+              <v-btn disabled large dark @click="resetForm">reset</v-btn>
+              <p class="doesnt-work">doesn't work yet</p>
 
   </fvl-form>
 </template>
@@ -85,6 +88,12 @@ export default{
 .form {
   grid-column: 2 / 3;
   grid-row: 2;
+}
+.doesnt-work {
+  grid-column: 2 / 3;
+  color: #d1d1d1;
+  font-size: 1.5rem;
+  padding: .5rem;
 }
 </style>
 
