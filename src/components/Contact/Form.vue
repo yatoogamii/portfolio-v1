@@ -33,8 +33,7 @@
 </template>
 
 <script>
-import { FvlForm, FvlInput, FvlTextarea, FvlSelect} from 'formvuelar'
-import $ from 'jquery';
+import { FvlForm, FvlInput, FvlTextarea, FvlSelect} from 'formvuelar';
 
 export default{
   name: 'Form',
@@ -74,17 +73,17 @@ export default{
       this.form.message = '';
     },
     sendMessage() {
-      Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "bracaval.elias.pro@gmail.com",
-        Password : "f0d91566-4f07-4ca8-b0f3-45762dd0e933",
-        To : 'bracaval.elias.pro@gmail.com',
-        From : this.form.email,
-        Subject : this.form.object,
-        Body : this.form.message
-      }).then(
-        message => alert(message)
-      );
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "bracaval.elias.pro@gmail.com",
+    Password : "f0d91566-4f07-4ca8-b0f3-45762dd0e933",
+    To : 'bracaval.elias.pro@gmail.com',
+    From : this.form.email,
+    Subject : this.form.object,
+    Body : this.form.message
+}).then(
+  message => alert(message)
+);
     }
   }
 }
